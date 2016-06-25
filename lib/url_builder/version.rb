@@ -1,3 +1,3 @@
-module UrlBuilder
-  VERSION = "0.1.0"
+class UrlBuilder
+  VERSION = '0.1.0'.freeze
 end

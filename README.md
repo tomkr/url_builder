@@ -21,7 +21,7 @@ Or install it yourself as:
 
 ## Usage
 
-    UrlBuilder.new('example.com').append('path')
+    UrlBuilder.new('example.com')
 
 ## Development
 
