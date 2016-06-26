@@ -21,7 +21,14 @@ Or install it yourself as:
 
 ## Usage
 
-    UrlBuilder.new('example.com')
+Set a base url to later expand. It defaults to an https scheme if none is provided.
+
+    url = UrlBuilder.new('example.com')
+
+Now you can expand it with a path and/or a query string.
+
+    url.expand('/path') # https://example.com/path
+    url.expand('other_path', q: a, r: b) # https://example.com/other_path?q=a&r=b
 
 ## Development
 

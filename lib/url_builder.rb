@@ -9,6 +9,14 @@ class UrlBuilder
     @url = URI.parse("https://#{@url}").to_s if scheme.nil?
   end
 
+  # Expands the base url with a path and optional query string. Returns the url
+  # as a string, since this should be the end of processing.
+  def expand(path, query = nil)
+    url = URI.parse(@url).merge(path)
+    url.query = query.map { |k, v| "#{k}=#{v}" }.join('&') if query
+    url.to_s
+  end
+
   def to_s
     @url
   end
