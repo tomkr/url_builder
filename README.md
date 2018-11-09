@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tomkr/url_builder.svg?branch=master)](https://travis-ci.org/tomkr/url_builder)
+
 # UrlBuilder
 
 UrlBuilder is a tool that makes it real simple to make urls with different paths
